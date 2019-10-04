@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{H0SL:function(n,t,u){(window.__NEXT_P=window.__NEXT_P||[]).push(["/",function(){return u("cMU6")}])},cMU6:function(n,t,u){"use strict";u.r(t);var c=u("q1tI"),e=u.n(c).a.createElement;t.default=function(){return e("div",null)}}},[["H0SL",1,0]]]);

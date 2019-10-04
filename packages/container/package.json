@@ -1,0 +1,57 @@
+{
+  "name": "@algovisio/container",
+  "author": "algovisio",
+  "version": "0.1.0",
+  "description": "Container for AlgoVisio Apps",
+  "keywords": [
+    "AlgoVisio"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MMittenbuehler/algovisio-dev-kit",
+    "directory": "packages/container"
+  },
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "echo \"No tests specified!\"",
+    "dev": "next dev",
+    "build": "npm run build:src && npm run build:container",
+    "build:container": "next build && next export",
+    "build:src": "babel src --out-dir dist --presets=@babel/preset-env,@babel/preset-react",
+    "start": "node cli/start.js",
+    "lint": "eslint --fix src/** layout/** pages/**"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "@material-ui/core": "^4.5.0",
+    "@material-ui/icons": "^4.4.3",
+    "@material-ui/styles": "^4.5.0",
+    "next": "^9.0.7",
+    "react": "^16.10.1",
+    "react-dom": "^16.10.1",
+    "prop-types": "^15.7.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "@babel/preset-react": "^7.0.0",
+    "@material-ui/core": "^4.5.0",
+    "@material-ui/icons": "^4.4.3",
+    "@material-ui/styles": "^4.5.0",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.5.1",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.15.1",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "express": "^4.17.1",
+    "next": "^9.0.7",
+    "prop-types": "^15.7.2",
+    "react": "^16.10.1",
+    "react-dom": "^16.10.1"
+  },
+  "dependencies": {
+    "isomorphic-unfetch": "^3.0.0"
+  }
+}

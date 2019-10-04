@@ -1,0 +1,55 @@
+{
+  "name": "create-algovisio-app",
+  "version": "0.1.0",
+  "description": "Create a development environment for an AlgoVisio App",
+  "keywords": [
+    "AlgoVisio"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MMittenbuehler/algovisio-dev-kit",
+    "directory": "packages/create-algovisio-app"
+  },
+  "license": "MIT",
+  "files": [
+    "dist",
+    "templates"
+  ],
+  "scripts": {
+    "build": "babel src --out-dir dist --presets=@babel/preset-env",
+    "lint": "npm run lint:src && npm run lint:template",
+    "lint:src": "eslint src/**.js --fix",
+    "lint:template": "eslint templates/default/pages/** templates/default/scripts/** --fix"
+  },
+  "bin": {
+    "create-algovisio-app": "./dist/index.js"
+  },
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "commander": "^3.0.2",
+    "core-js": "^3.2.1",
+    "cpy": "^7.3.0",
+    "cross-spawn": "^7.0.0",
+    "got": "^9.6.0",
+    "make-dir": "^3.0.0",
+    "promisepipe": "^3.0.0",
+    "prompts": "^2.2.1",
+    "regenerator-runtime": "^0.13.3",
+    "rimraf": "^3.0.0",
+    "tar": "^5.0.2",
+    "update-check": "^1.5.3",
+    "validate-npm-package-name": "^3.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.2",
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.5.1",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.15.1",
+    "eslint-plugin-react-hooks": "^1.7.0"
+  }
+}
