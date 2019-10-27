@@ -1,6 +1,6 @@
 {
   "name": "create-algovisio-app",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Create a development environment for an AlgoVisio App",
   "keywords": [
     "AlgoVisio"
