@@ -15,7 +15,7 @@ export default class MyApp extends App {
     // Send height to parent
     if (process.browser && window && window.parent) {
       const sendHeight = () => {
-        window.parent.postMessage({ height: document.body.scrollHeight }, 'http://localhost:3000');
+        window.parent.postMessage({ height: document.body.scrollHeight }, '*');
       };
       sendHeight();
       window.onresize = sendHeight;
